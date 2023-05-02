@@ -36,23 +36,23 @@
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200 divide-solid">
-                <tr>
+                <tr v-for="post in posts" :key="post.id">
                     <td
                         class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900"
                     >
-                        post id
+                        {{ post.id }}
                     </td>
 
                     <td
                         class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900"
                     >
-                        post title
+                        {{ post.title }}
                     </td>
 
                     <td
                         class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900"
                     >
-                        post content
+                       {{ post.description }}
                     </td>
 
                     <td
@@ -76,13 +76,10 @@
 
 <script>
 
-import { Head, Link,router } from "@inertiajs/vue3";
 
 export default {
     name: "Index",
     components: {
-        Head,
-        Link,
     },
     props: {
         posts: Object,

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\PostController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +16,8 @@ use App\Http\Controllers\Auth\PostController;
 
 Route::inertia('/', 'Welcome');
 
-Route::inertia('post', 'Posts/Index')->name('post');
+Route::get('post', [PostController::class, 'getPosts']);
+// Route::inertia('post', 'Posts/Index')->name('post');
 
 // Route::post('post', [PostController::class, 'store'])
 //     ->name('register.post');
