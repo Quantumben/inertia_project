@@ -1,5 +1,17 @@
 <template>
-    <h1 class="bg-red-400">Hello world</h1>
+    <h2 class="font-semibold text-xl text-gray-800 leading-tight text-center m-10">
+            All Post
+    </h2>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    Hello
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
