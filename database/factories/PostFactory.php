@@ -19,7 +19,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
 
-        $imagePath = 'public/fake_images';
+        $imagePath = 'storage/fake_images';
 
         // Create the directory if it doesn't exist
         if (!File::exists($imagePath)) {

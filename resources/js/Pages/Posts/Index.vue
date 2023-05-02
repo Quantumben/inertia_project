@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto ">
 
-        <a class="inline-block px-4 py-3 bg-blue-500 text-white rounded mb-4 mt-5">Add new post</a>
+        <a href="/storePost" class="inline-block px-4 py-3 bg-blue-500 text-white rounded mb-4 mt-5">Add new post</a>
         <table class="mt-4 min-w-full divide-y divide-gray-200 border">
             <thead>
                 <tr>
@@ -57,7 +57,7 @@
 
                     <td
                         class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                        <img :src="`fake_images/${post.image}`" alt="Image description">
+                        <img :src="`storage/${post.image}`" width="150" height="150" alt="Image description">
                     </td>
 
                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">

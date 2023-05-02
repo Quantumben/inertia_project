@@ -17,7 +17,6 @@ use App\Http\Controllers\PostController;
 Route::inertia('/', 'Welcome');
 
 Route::get('post', [PostController::class, 'getPosts']);
-// Route::inertia('post', 'Posts/Index')->name('post');
 
-// Route::post('post', [PostController::class, 'store'])
-//     ->name('register.post');
+Route::inertia('storePost', 'Posts/Create');
+Route::post('storePost', [PostController::class, 'storePost']);
