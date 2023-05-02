@@ -56,9 +56,8 @@
                     </td>
 
                     <td
-                        class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900"
-                    >
-                        post created_at
+                        class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
+                        <img :src="`fake_images/${post.image}`" alt="Image description">
                     </td>
 
                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
